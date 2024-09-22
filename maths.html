@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics - Educational Blog</title>
+    <style>
+       body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('mathsbg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+      }
+
+        header {
+            padding: 20px;
+            background-color: #444;
+           box-shadow: 0 0 5px whitesmoke;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        header h1 {
+            margin: 0;
+            color: lightblue;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            width: 100%;
+            height: 500px;
+            text-align: center;
+            border-bottom: 3px solid whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-wrap: wrap; */
+
+        }
+        .image{
+            width: 50%;
+            
+        }
+        .image img{
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 0 5px whitesmoke;
+
+        }
+        .text{
+            width: 50%;
+        }
+
+        .section h2 {
+            color: yellow;
+            border-bottom: 2px solid yellow;
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Beauty of Mathematics</h1>
+    </header>
+
+    <div class="content">
+       
+        <div class="section">
+            <div class="image">
+                <img src="maths1.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>What is Mathematics?</h2>
+              <p>Mathematics is the study of numbers, shapes, and patterns. It is essential to everyday life and forms the foundation of many scientific disciplines, including physics, computer science, and engineering.</p>
+             </div>
+        </div>
+
+        <div class="section">
+            <div class="image">
+                <img src="maths2.jpeg" alt="">
+            </div>
+            <div class="text">
+                <h2>Importance of Maths in the Real World</h2>
+                <p>Maths is not only about abstract numbers and theorems. It plays a critical role in problem-solving and decision-making in areas like finance, engineering, and data science.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="image">
+                <img src="maths3.jpg" alt="">
+            </div>
+           <div class="text">
+             <h2>Famous Mathematicians</h2>
+             <p>Mathematicians like Euclid, Pythagoras, and Alan Turing have revolutionized the way we approach both pure and applied mathematics.</p>
+        </div>
+    </div>
+</body>
+</html>

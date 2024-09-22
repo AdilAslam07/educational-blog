@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+             background-color: rgb(33, 31, 31);  
+            position: relative;
+            /* overflow: hidden; */
+             /* z-index: -1000;   */
+             /* top: 0; */
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .nav{
+            width: 100%; 
+            height: 100px;
+            background-color: whitesmoke; 
+            box-shadow:  0 0 15px black;
+            position: sticky;
+            /* border-radius: 15px; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+           
+          
+        }
+        .title{
+            width: 100%;
+            height: 75px;
+            background-color: rgb(54, 53, 53);
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           box-shadow: 0 0 5px whitesmoke;
+        }
+        .title h1{
+            background: none;
+        }
+        .logo{
+            height: 100%;
+            width: 20%;
+            
+            background:none;
+        }
+        .logo img{
+            height: 80px;
+            width: 80px;
+            background: none;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 0 5px white;
+            margin-top: 8px;
+        }
+       
+        .signup{
+            /* margin-top: 20px; */
+            margin-right: 10px;
+            background: none;
+            
+
+        }
+        .logo{
+            /* margin-top: 20px; */
+        }
+        .buttons{
+           /* margin-top: 20px; */
+           background: none;
+           margin-right: 120px;
+
+
+        }
+        button{
+            margin: 5px;
+            padding: 8px;
+            border-radius: 40px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 0 3px black;
+            background:none;
+            color: rgb(0, 0, 0);
+
+
+        }
+        button:hover{
+            border: 2px solid rgb(0, 0, 0);
+        }
+        .sign{
+            background-color: darksalmon;
+        }
+        a{
+            background: none;
+        }
+        .menuItems{
+            display: none;
+            width: 100vw;
+            height: 60px;
+        }
+       
+        
+
+        
+        /* .images img{
+            margin: 2px;
+            height: 350px;
+            width: 450px;
+        } */
+
+       
+        .marquee-container {
+            width: 100%;
+            overflow: hidden; 
+            white-space: nowrap; 
+            box-sizing: border-box;
+            margin-top: 30px;
+            padding: 5px;
+            
+            /* box-shadow: 0 0 10px black; */
+        }
+
+        /* The sliding image set */
+        .marquee {
+            display: inline-block;
+            animation: slide 20s linear infinite; /* Infinite animation */
+        }
+
+        /* Individual images */
+        .marquee img {
+            width: 300px; /* Set a fixed width for the images */
+            height: 300px; /* Set a fixed height for the images */
+            margin-right: 20px; /* Space between images */
+            border-radius: 10px;
+            box-shadow: 0 0 15px black;
+            /* opacity: 0.75; */
+
+        }
+
+        /* Keyframes for sliding animation */
+        @keyframes slide {
+            0% {
+                transform: translateX(100%); /* Start with images off-screen on the right */
+            }
+            100% {
+                transform: translateX(-100%); /* Move images off-screen on the left */
+            }
+        }
+        main{
+            border-top: 2px solid whitesmoke;
+        }
+        .paraContainer{
+            background: none;
+             display: flex;
+              flex-direction: column;
+               justify-content: center;
+               align-items:center; 
+               margin-top: 50px; 
+               box-sizing: border-box;
+               width: 100vw;
+                padding: 5px;
+        }
+        .para{
+            width: 700px;
+            box-shadow:0 0 5px whitesmoke;
+            padding: 10px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+
+        }
+        .para h1{
+            color: whitesmoke;
+            margin-bottom: 30px;
+            background: none;
+        }
+        .para p{
+            width: 100%;
+            height: 200px; 
+            color: rgb(250, 244, 244);
+            line-height:1.6;
+            background: none;
+        }
+        iframe{
+             margin-top: 40px; 
+             color: whitesmoke; 
+             background:none; 
+             width:100%;
+              height:500px;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 100%;
+            background-color: black;
+            color: bisque;
+        }
+        .footer h1{
+            background: none;
+        }
+        .social{
+            background: none;
+        }
+        .social img{
+            height: 50px;
+            width: 50px;
+        
+        }
+        .social img:hover{
+            cursor: pointer;
+            opacity: 0.25;
+        }
+       @media(max-width: 768px){
+           .para{
+            width: 100%;
+            height: 500px;
+            text-align: center;
+           }
+           body{
+            padding: 5px;
+           }
+           .nav{
+            width: 100vw;
+           }
+           .buttons{
+             display: none;
+           }
+           .title{
+            width: 100vw;
+           }
+           .menuItems{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            visibility: visible;
+           }
+           .menuItems button{
+            background-color: whitesmoke;
+           }
+          
+           
+       }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        
+            <div class="logo">
+                <img src="logo3.png">
+            </div>
+            <div class="buttons">
+                <a href="physics.html" target="iframe"><button>PHYSICS</button></a>
+                <a href="maths.html" target="iframe"><button>MATHS</button></a>
+                <a href="ai.html" target="iframe"><button>AI</button></a>
+                <a href="researchers.html" target="iframe"><button>RESERCHERS</button></a>
+              
+                
+            </div>
+             <div class="signup">
+                <a href="signup.html" target="iframe"><button class="sign">SIGNUP</button></a>
+             </div>
+             
+    </div>
+    <div class="menuItems">
+        <a href="physics.html" target="iframe"><button>PHYSICS</button></a>
+        <a href="maths.html" target="iframe"><button>MATHS</button></a>
+        <a href="ai.html" target="iframe"><button>AI</button></a>
+        <a href="researchers.html" target="iframe"><button>RESERCHERS</button></a>
+        <!-- <a class="sign" href="signup.html" target="iframe"><button >SIGNUP</button></a> -->
+    </div>
+    <div class="title">
+        <h1>All About Education</h1>
+    </div>
+    <header class="marquee-container">
+        <div class="marquee">
+            <img src="images1.jpeg">
+            <img src="image2.jpg">
+            <img src="images3.jpeg">
+            <img src="image4.jpeg">
+            <img src="image5.jpeg">
+        </div>
+    </header>
+    <main >
+       <div class="paraContainer" >
+         <div class="para">
+            <h1>IMPORTANCE OF EDUCATION</h1>
+            <p>
+                Education is one of the most powerful tools for personal and societal development. It empowers individuals with the knowledge, skills, and critical thinking needed to navigate the complexities of life, make informed decisions, and contribute meaningfully to society. Education fosters intellectual growth, enhances career opportunities, and helps bridge socio-economic divides, ensuring more equitable access to resources and opportunities. Beyond academic knowledge, education promotes cultural understanding, tolerance, and the development of ethical values, creating more responsible global citizens. Ultimately, the importance of education lies in its ability to transform lives, break the cycle of poverty, and drive innovation and progress in the world.
+            </p>
+         </div>
+       </div>
+        <iframe name="iframe"> 
+        </iframe>
+    
+
+    </main>
+    <footer>
+        <div class="footer">
+            <h1>Let's Connect</h1>
+            <div class="social">
+                <a href="https://www.instagram.com/adil_burki_007/"><img src="insta2.jpg"></a>
+                <a href="https://www.linkedin.com/in/adil-aslam-85a480266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="linkedin.jpg"></a>
+                <a href="https://github.com/AdilAslam07"><img src="github.jpg"></a>
+            </div>
+           <div style="display: flex; justify-content:center;align-items: center; background:none;">
+            <h3 style="background: none;margin: 10px;">adilmeric007@gmail.com </h3>
+            <i class="fas fa-envelope" style="background: none;"></i>
+           </div>
+        </div>
+    </footer>
+</body>
+</html>

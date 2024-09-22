@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin:0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    width: 50%;
+    height: 500px;
+    /* border: 2px solid grey; */
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    background-color: whitesmoke;
+    color: black;
+   
+   
+    
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    /* margin-left: 15px; */
+    /* margin-right: 15px; */
+   
+}
+/* .right{
+  
+    
+    
+} */
+img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   box-sizing: border-box;
+   border-radius: 5px;
+   
+}
+input{
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0 0 5px black;
+}
+input:hover{
+    background-color: black;
+    color: white;
+}
+button{
+   
+    padding: 15px 25px 15px 25px;
+    border-radius: 40px;
+    background-color: darksalmon;
+    border: none;
+    box-shadow: 0 0 3px black;
+    
+}
+button:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+label{
+    text-align: left;
+}
+p{
+    margin-bottom: 20px;
+    font-weight: bold;
+    /* font-size: ; */
+}
+@media (max-width: 768px) {
+            .main {
+                width: 80%;
+                height: auto;
+                flex-direction: column;
+                margin-top: 50px;
+            }
+            .left, .right {
+                width: 100%;
+                padding: 20px;
+            }
+            img {
+                width: 80%;
+                height: 300px;
+                margin-left: 30px;
+            }
+        }
+@media (max-width: 480px) {
+            .main {
+                width: 90%;
+            }
+            input {
+                width: 80%;
+                padding: 8px;
+                font-size: 14px;
+            }
+            button {
+                width: 80%;
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+      <div class="left">
+        <p>SIGN UP HERE! </p>
+        <label>UserName</label>
+        <input type="text" placeholder="Enter your name">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password">
+        <button>SIGN UP</button> 
+      </div>
+      <div class="right">
+        <img src="images.jpeg" >
+      </div>
+      </div>
+    </div>
+</body>
+</html>
